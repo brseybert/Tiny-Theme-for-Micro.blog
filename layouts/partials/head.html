@@ -21,9 +21,13 @@
     {{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Site.Title }} - {{ .Title }}{{ end }}
     {{ end }}
   </title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Flex:opsz,wdth,wght,XTRA,YTAS,YTDE@8..144,151,900,435,779,-222&display=swap" rel="stylesheet">
 
   <meta name="description" content="{{ .Summary }}">
-  <meta name="theme-color" content="#0000EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#00d478" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#282a36" media="(prefers-color-scheme: dark)">
   <link rel="shortcut icon" href="https://micro.blog/{{ .Site.Author.username }}/favicon.png" type="image/x-icon" />
   <link rel="stylesheet" href="{{ "css/main.css" | relURL }}?{{ .Site.Params.theme_seconds }}">
